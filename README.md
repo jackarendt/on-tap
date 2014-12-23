@@ -1,0 +1,1 @@
+app lets you know where your friends are at UIUC.... more to come i suppose
