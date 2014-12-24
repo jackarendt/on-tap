@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import "LocationView.h"
+
 
 @interface HomeViewController (){
     BOOL locationVisible;
@@ -68,6 +68,34 @@
     [self performSegueWithIdentifier:@"toProfile" sender:self];
 }
 
+-(void)locationValuesDidChange:(BOOL)location facebookVisible:(BOOL)visible {
+    //handle it in user prefs
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 8; //needs to be changed
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.imageView.image = [UIImage imageNamed:@"redlion"];
+    cell.imageView.layer.cornerRadius = 37.5;
+    cell.imageView.clipsToBounds = YES;
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 150;
+}
 /*
 #pragma mark - Navigation
 

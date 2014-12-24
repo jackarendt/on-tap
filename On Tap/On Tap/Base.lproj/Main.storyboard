@@ -72,12 +72,35 @@
                     <view key="view" contentMode="scaleToFill" id="dox-jK-3ra">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dfD-fK-61s">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="069-Dw-dfW">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="069-Dw-dfW" id="6Mk-Ji-Fd5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="S2P-34-eow" id="9sz-47-ReW"/>
+                                    <outlet property="delegate" destination="S2P-34-eow" id="XeR-Bq-L2r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dfD-fK-61s" firstAttribute="top" secondItem="dox-jK-3ra" secondAttribute="top" id="Kj6-7K-Cio"/>
+                            <constraint firstAttribute="bottom" secondItem="dfD-fK-61s" secondAttribute="bottom" id="Zoq-Wl-eB9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qAO-2N-PJI">
                         <barButtonItem key="backBarButtonItem" title=" " id="K6v-H0-Tzn"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="dfD-fK-61s" id="8AT-iO-cE1"/>
                         <segue destination="fZY-Ow-qSc" kind="show" identifier="toProfile" id="Mf0-fj-5I3"/>
                     </connections>
                 </viewController>
