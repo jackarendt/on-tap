@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2AA33D1A4A5E0C006DC980 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AA33C1A4A5E0C006DC980 /* HomeViewController.m */; };
+		2E2AA3401A4A5E29006DC980 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AA33F1A4A5E29006DC980 /* ProfileTableViewController.m */; };
+		2E2AA3441A4A6194006DC980 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3411A4A6194006DC980 /* locationIcon.png */; };
+		2E2AA3451A4A6194006DC980 /* locationIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3421A4A6194006DC980 /* locationIcon@2x.png */; };
+		2E2AA3461A4A6194006DC980 /* locationIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3431A4A6194006DC980 /* locationIcon@3x.png */; };
+		2E2AA34B1A4A67BC006DC980 /* profileIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3481A4A67BC006DC980 /* profileIcon.png */; };
+		2E2AA34C1A4A67BC006DC980 /* profileIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3491A4A67BC006DC980 /* profileIcon@2x.png */; };
+		2E2AA34D1A4A67BC006DC980 /* profileIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA34A1A4A67BC006DC980 /* profileIcon@3x.png */; };
+		2E2AA3501A4A6A4E006DC980 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AA34F1A4A6A4E006DC980 /* LocationView.m */; };
+		2E2AA3541A4A7698006DC980 /* locationHighlightedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3511A4A7698006DC980 /* locationHighlightedIcon.png */; };
+		2E2AA3551A4A7698006DC980 /* locationHighlightedIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3521A4A7698006DC980 /* locationHighlightedIcon@2x.png */; };
+		2E2AA3561A4A7698006DC980 /* locationHighlightedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA3531A4A7698006DC980 /* locationHighlightedIcon@3x.png */; };
 		2EF407341A4A1287009C8BC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407331A4A1287009C8BC6 /* main.m */; };
 		2EF407371A4A1287009C8BC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407361A4A1287009C8BC6 /* AppDelegate.m */; };
 		2EF4073A1A4A1287009C8BC6 /* On_Tap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407381A4A1287009C8BC6 /* On_Tap.xcdatamodeld */; };
@@ -31,6 +43,8 @@
 		2EF407791A4A17D8009C8BC6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF407781A4A17D8009C8BC6 /* Security.framework */; };
 		2EF4077B1A4A17E2009C8BC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF4077A1A4A17E2009C8BC6 /* SystemConfiguration.framework */; };
 		2EF4077D1A4A18B0009C8BC6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF4077C1A4A18B0009C8BC6 /* libsqlite3.dylib */; };
+		2EF407801A4A30A1009C8BC6 /* OTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4077F1A4A30A1009C8BC6 /* OTConstants.m */; };
+		2EF407831A4A35DC009C8BC6 /* WhyFacebookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407821A4A35DC009C8BC6 /* WhyFacebookTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2AA33B1A4A5E0C006DC980 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2E2AA33C1A4A5E0C006DC980 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2E2AA33E1A4A5E29006DC980 /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		2E2AA33F1A4A5E29006DC980 /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		2E2AA3411A4A6194006DC980 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationIcon.png; path = ../images/locationIcon.png; sourceTree = "<group>"; };
+		2E2AA3421A4A6194006DC980 /* locationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationIcon@2x.png"; path = "../images/locationIcon@2x.png"; sourceTree = "<group>"; };
+		2E2AA3431A4A6194006DC980 /* locationIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationIcon@3x.png"; path = "../images/locationIcon@3x.png"; sourceTree = "<group>"; };
+		2E2AA3481A4A67BC006DC980 /* profileIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profileIcon.png; path = ../images/profileIcon.png; sourceTree = "<group>"; };
+		2E2AA3491A4A67BC006DC980 /* profileIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profileIcon@2x.png"; path = "../images/profileIcon@2x.png"; sourceTree = "<group>"; };
+		2E2AA34A1A4A67BC006DC980 /* profileIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profileIcon@3x.png"; path = "../images/profileIcon@3x.png"; sourceTree = "<group>"; };
+		2E2AA34E1A4A6A4E006DC980 /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
+		2E2AA34F1A4A6A4E006DC980 /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
+		2E2AA3511A4A7698006DC980 /* locationHighlightedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationHighlightedIcon.png; path = ../images/locationHighlightedIcon.png; sourceTree = "<group>"; };
+		2E2AA3521A4A7698006DC980 /* locationHighlightedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationHighlightedIcon@2x.png"; path = "../images/locationHighlightedIcon@2x.png"; sourceTree = "<group>"; };
+		2E2AA3531A4A7698006DC980 /* locationHighlightedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationHighlightedIcon@3x.png"; path = "../images/locationHighlightedIcon@3x.png"; sourceTree = "<group>"; };
 		2EF4072E1A4A1287009C8BC6 /* On Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF407321A4A1287009C8BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF407331A4A1287009C8BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +103,10 @@
 		2EF407781A4A17D8009C8BC6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2EF4077A1A4A17E2009C8BC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2EF4077C1A4A18B0009C8BC6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2EF4077E1A4A30A1009C8BC6 /* OTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTConstants.h; sourceTree = "<group>"; };
+		2EF4077F1A4A30A1009C8BC6 /* OTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTConstants.m; sourceTree = "<group>"; };
+		2EF407811A4A35DC009C8BC6 /* WhyFacebookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhyFacebookTableViewController.h; sourceTree = "<group>"; };
+		2EF407821A4A35DC009C8BC6 /* WhyFacebookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhyFacebookTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +143,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2AA3471A4A619B006DC980 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E2AA3511A4A7698006DC980 /* locationHighlightedIcon.png */,
+				2E2AA3521A4A7698006DC980 /* locationHighlightedIcon@2x.png */,
+				2E2AA3531A4A7698006DC980 /* locationHighlightedIcon@3x.png */,
+				2E2AA3481A4A67BC006DC980 /* profileIcon.png */,
+				2E2AA3491A4A67BC006DC980 /* profileIcon@2x.png */,
+				2E2AA34A1A4A67BC006DC980 /* profileIcon@3x.png */,
+				2E2AA3411A4A6194006DC980 /* locationIcon.png */,
+				2E2AA3421A4A6194006DC980 /* locationIcon@2x.png */,
+				2E2AA3431A4A6194006DC980 /* locationIcon@3x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		2EF407251A4A1287009C8BC6 = {
 			isa = PBXGroup;
 			children = (
+				2E2AA3471A4A619B006DC980 /* Images */,
 				2EF407661A4A1326009C8BC6 /* Frameworks */,
 				2EF407301A4A1287009C8BC6 /* On Tap */,
 				2EF4074D1A4A1287009C8BC6 /* On TapTests */,
@@ -136,7 +186,17 @@
 				2EF407361A4A1287009C8BC6 /* AppDelegate.m */,
 				2EF407671A4A172A009C8BC6 /* LoginViewController.h */,
 				2EF407681A4A172A009C8BC6 /* LoginViewController.m */,
+				2EF4077E1A4A30A1009C8BC6 /* OTConstants.h */,
+				2EF4077F1A4A30A1009C8BC6 /* OTConstants.m */,
 				2EF4073E1A4A1287009C8BC6 /* Main.storyboard */,
+				2E2AA34E1A4A6A4E006DC980 /* LocationView.h */,
+				2E2AA34F1A4A6A4E006DC980 /* LocationView.m */,
+				2E2AA33E1A4A5E29006DC980 /* ProfileTableViewController.h */,
+				2E2AA33F1A4A5E29006DC980 /* ProfileTableViewController.m */,
+				2E2AA33B1A4A5E0C006DC980 /* HomeViewController.h */,
+				2E2AA33C1A4A5E0C006DC980 /* HomeViewController.m */,
+				2EF407811A4A35DC009C8BC6 /* WhyFacebookTableViewController.h */,
+				2EF407821A4A35DC009C8BC6 /* WhyFacebookTableViewController.m */,
 				2EF407411A4A1287009C8BC6 /* Images.xcassets */,
 				2EF407431A4A1287009C8BC6 /* LaunchScreen.xib */,
 				2EF407381A4A1287009C8BC6 /* On_Tap.xcdatamodeld */,
@@ -276,8 +336,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF407401A4A1287009C8BC6 /* Main.storyboard in Resources */,
+				2E2AA34C1A4A67BC006DC980 /* profileIcon@2x.png in Resources */,
+				2E2AA3451A4A6194006DC980 /* locationIcon@2x.png in Resources */,
+				2E2AA3561A4A7698006DC980 /* locationHighlightedIcon@3x.png in Resources */,
+				2E2AA3441A4A6194006DC980 /* locationIcon.png in Resources */,
+				2E2AA34B1A4A67BC006DC980 /* profileIcon.png in Resources */,
 				2EF407451A4A1287009C8BC6 /* LaunchScreen.xib in Resources */,
 				2EF407421A4A1287009C8BC6 /* Images.xcassets in Resources */,
+				2E2AA3551A4A7698006DC980 /* locationHighlightedIcon@2x.png in Resources */,
+				2E2AA3541A4A7698006DC980 /* locationHighlightedIcon.png in Resources */,
+				2E2AA3461A4A6194006DC980 /* locationIcon@3x.png in Resources */,
+				2E2AA34D1A4A67BC006DC980 /* profileIcon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF407831A4A35DC009C8BC6 /* WhyFacebookTableViewController.m in Sources */,
+				2EF407801A4A30A1009C8BC6 /* OTConstants.m in Sources */,
 				2EF407691A4A172A009C8BC6 /* LoginViewController.m in Sources */,
 				2EF407371A4A1287009C8BC6 /* AppDelegate.m in Sources */,
 				2EF407341A4A1287009C8BC6 /* main.m in Sources */,
+				2E2AA33D1A4A5E0C006DC980 /* HomeViewController.m in Sources */,
+				2E2AA3501A4A6A4E006DC980 /* LocationView.m in Sources */,
 				2EF4073A1A4A1287009C8BC6 /* On_Tap.xcdatamodeld in Sources */,
+				2E2AA3401A4A5E29006DC980 /* ProfileTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +577,7 @@
 				2EF407561A4A1287009C8BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EF407571A4A1287009C8BC6 /* Build configuration list for PBXNativeTarget "On TapTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +586,7 @@
 				2EF407591A4A1287009C8BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
