@@ -87,6 +87,8 @@
 }
 
 -(void)login {
+    
+    //Ask to see the public profile, email and friends list.
     NSArray *permissionsArray = @[@"public_profile", @"email", @"user_friends"];
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
         if (!user) {
@@ -116,7 +118,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    //Should send user information to home View controller.
 }
 
 @end

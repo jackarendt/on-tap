@@ -21,6 +21,7 @@
 
 @implementation LocationView
 
+#pragma mark - Init functions
 -(instancetype)init {
     self = [super init];
     if(self) {
@@ -42,25 +43,31 @@
     self.backgroundColor = [UIColor whiteColor];
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.layer.borderWidth = 1.0;
+    
+    //Create location label and add it to subview
     self.locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, self.bounds.size.width - 70, 30)];
     self.locationLabel.text = @"Location Services:";
     self.locationLabel.font = [UIFont fontWithName: mainFont size:17.0];
     [self addSubview:self.locationLabel];
     
+    //Create facebook visible label and add it to subview
     self.facebookLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, self.bounds.size.width - 70, 30)];
     self.facebookLabel.text = @"Visible to Facebook Friends:";
     self.facebookLabel.font = [UIFont fontWithName:mainFont size:17.0];
     [self addSubview:self.facebookLabel];
     
+    //Create location switch, add target and add it to subview
     self.locationSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(self.bounds.size.width - 65, 10, 51, 31)];
     [self.locationSwitch addTarget:self action:@selector(locationChanged) forControlEvents:UIControlEventValueChanged];
     [self addSubview: self.locationSwitch];
     
+    //Create facebook switch, add target and add it to subview
     self.facebookSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(self.bounds.size.width - 65, 50, 51, 31)];
     [self.locationSwitch addTarget:self action:@selector(facebookChanged) forControlEvents:UIControlEventValueChanged];
     [self addSubview:self.facebookSwitch];
 }
 
+#pragma mark - IBActions
 -(void)locationChanged {
     [self valuesChanged:!locationActive facebook:facebookActive];
 }

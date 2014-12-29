@@ -44,6 +44,8 @@
 		2E2AA3961A4A8760006DC980 /* whitehorse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA37E1A4A8760006DC980 /* whitehorse@2x.png */; };
 		2E2AA3971A4A8760006DC980 /* whitehorse@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AA37F1A4A8760006DC980 /* whitehorse@3x.png */; };
 		2E2AA39A1A4A8B2F006DC980 /* BarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AA3991A4A8B2F006DC980 /* BarTableViewCell.m */; };
+		2E2AA39F1A4A8CEA006DC980 /* ProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AA39E1A4A8CEA006DC980 /* ProgressBar.m */; };
+		2E4F66191A50F610008000E0 /* FriendBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F66181A50F610008000E0 /* FriendBarView.m */; };
 		2EF407341A4A1287009C8BC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407331A4A1287009C8BC6 /* main.m */; };
 		2EF407371A4A1287009C8BC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407361A4A1287009C8BC6 /* AppDelegate.m */; };
 		2EF4073A1A4A1287009C8BC6 /* On_Tap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EF407381A4A1287009C8BC6 /* On_Tap.xcdatamodeld */; };
@@ -124,6 +126,10 @@
 		2E2AA37F1A4A8760006DC980 /* whitehorse@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whitehorse@3x.png"; path = "../images/bars/whitehorse@3x.png"; sourceTree = "<group>"; };
 		2E2AA3981A4A8B2F006DC980 /* BarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarTableViewCell.h; sourceTree = "<group>"; };
 		2E2AA3991A4A8B2F006DC980 /* BarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarTableViewCell.m; sourceTree = "<group>"; };
+		2E2AA39D1A4A8CEA006DC980 /* ProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressBar.h; sourceTree = "<group>"; };
+		2E2AA39E1A4A8CEA006DC980 /* ProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressBar.m; sourceTree = "<group>"; };
+		2E4F66171A50F610008000E0 /* FriendBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendBarView.h; sourceTree = "<group>"; };
+		2E4F66181A50F610008000E0 /* FriendBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendBarView.m; sourceTree = "<group>"; };
 		2EF4072E1A4A1287009C8BC6 /* On Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF407321A4A1287009C8BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF407331A4A1287009C8BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -242,13 +248,34 @@
 			name = bars;
 			sourceTree = "<group>";
 		};
-		2E2AA39B1A4A8B34006DC980 /* Reusable Cells */ = {
+		2E2AA39B1A4A8B34006DC980 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E2AA34E1A4A6A4E006DC980 /* LocationView.h */,
+				2E2AA34F1A4A6A4E006DC980 /* LocationView.m */,
+				2E2AA39D1A4A8CEA006DC980 /* ProgressBar.h */,
+				2E2AA39E1A4A8CEA006DC980 /* ProgressBar.m */,
 				2E2AA3981A4A8B2F006DC980 /* BarTableViewCell.h */,
 				2E2AA3991A4A8B2F006DC980 /* BarTableViewCell.m */,
+				2E4F66171A50F610008000E0 /* FriendBarView.h */,
+				2E4F66181A50F610008000E0 /* FriendBarView.m */,
 			);
-			name = "Reusable Cells";
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2E2AA39C1A4A8BFC006DC980 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EF407671A4A172A009C8BC6 /* LoginViewController.h */,
+				2EF407681A4A172A009C8BC6 /* LoginViewController.m */,
+				2E2AA33E1A4A5E29006DC980 /* ProfileTableViewController.h */,
+				2E2AA33F1A4A5E29006DC980 /* ProfileTableViewController.m */,
+				2E2AA33B1A4A5E0C006DC980 /* HomeViewController.h */,
+				2E2AA33C1A4A5E0C006DC980 /* HomeViewController.m */,
+				2EF407811A4A35DC009C8BC6 /* WhyFacebookTableViewController.h */,
+				2EF407821A4A35DC009C8BC6 /* WhyFacebookTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		2EF407251A4A1287009C8BC6 = {
@@ -277,19 +304,10 @@
 				2EF4073E1A4A1287009C8BC6 /* Main.storyboard */,
 				2EF407351A4A1287009C8BC6 /* AppDelegate.h */,
 				2EF407361A4A1287009C8BC6 /* AppDelegate.m */,
-				2EF407671A4A172A009C8BC6 /* LoginViewController.h */,
-				2EF407681A4A172A009C8BC6 /* LoginViewController.m */,
 				2EF4077E1A4A30A1009C8BC6 /* OTConstants.h */,
 				2EF4077F1A4A30A1009C8BC6 /* OTConstants.m */,
-				2E2AA34E1A4A6A4E006DC980 /* LocationView.h */,
-				2E2AA34F1A4A6A4E006DC980 /* LocationView.m */,
-				2E2AA33E1A4A5E29006DC980 /* ProfileTableViewController.h */,
-				2E2AA33F1A4A5E29006DC980 /* ProfileTableViewController.m */,
-				2E2AA33B1A4A5E0C006DC980 /* HomeViewController.h */,
-				2E2AA33C1A4A5E0C006DC980 /* HomeViewController.m */,
-				2EF407811A4A35DC009C8BC6 /* WhyFacebookTableViewController.h */,
-				2EF407821A4A35DC009C8BC6 /* WhyFacebookTableViewController.m */,
-				2E2AA39B1A4A8B34006DC980 /* Reusable Cells */,
+				2E2AA39C1A4A8BFC006DC980 /* Controllers */,
+				2E2AA39B1A4A8B34006DC980 /* Views */,
 				2EF407411A4A1287009C8BC6 /* Images.xcassets */,
 				2EF407431A4A1287009C8BC6 /* LaunchScreen.xib */,
 				2EF407381A4A1287009C8BC6 /* On_Tap.xcdatamodeld */,
@@ -483,8 +501,10 @@
 			files = (
 				2EF407831A4A35DC009C8BC6 /* WhyFacebookTableViewController.m in Sources */,
 				2EF407801A4A30A1009C8BC6 /* OTConstants.m in Sources */,
+				2E4F66191A50F610008000E0 /* FriendBarView.m in Sources */,
 				2EF407691A4A172A009C8BC6 /* LoginViewController.m in Sources */,
 				2E2AA39A1A4A8B2F006DC980 /* BarTableViewCell.m in Sources */,
+				2E2AA39F1A4A8CEA006DC980 /* ProgressBar.m in Sources */,
 				2EF407371A4A1287009C8BC6 /* AppDelegate.m in Sources */,
 				2EF407341A4A1287009C8BC6 /* main.m in Sources */,
 				2E2AA33D1A4A5E0C006DC980 /* HomeViewController.m in Sources */,

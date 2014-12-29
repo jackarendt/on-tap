@@ -19,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //Set up app id for parse, and initialize facebook
     [Parse setApplicationId:@"AOj7UqppiK2acxcOWkwAjOTlOOxB9sfyfWbJP604" clientKey:@"bYmATCbr6naNm7Fq3Ie2Gu8wyZ6DNx5KUO81kxmU"];
     [PFFacebookUtils initializeFacebook];
     return YES;

@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProgressBar.h"
 
 @interface BarTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSArray *activeFriends;
+@property float progress;
+@property BOOL cover;
+@property (nonatomic, strong) NSString *barImageString;
+
+-(void)setCapacity:(float)capacity;
+-(void)createView:(float)capacity;
 
 @end
